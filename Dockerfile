@@ -13,6 +13,7 @@ RUN sed -i '/ParallelDownloads/s/^#//g' /etc/pacman.conf && \
     pyalpm \
     python-build \
     python-installer \
+    python-hatchling \
     python-markdown-it-py \
     python-setuptools \
     python-wheel \
