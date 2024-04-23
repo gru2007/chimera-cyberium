@@ -1,9 +1,9 @@
 #! /bin/bash
 
 export VERSION="45-1"
-export SYSTEM_DESC="ChimeraOS"
-export SYSTEM_NAME="chimeraos"
-export USERNAME="gamer"
+export SYSTEM_DESC="CyberiumOS"
+export SYSTEM_NAME="cyberium"
+export USERNAME="cyber"
 export SIZE="10000MB"
 export ARCHIVE_DATE="2023/12/17"
 export WEBSITE="https://chimeraos.org"
