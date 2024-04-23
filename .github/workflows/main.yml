@@ -7,10 +7,10 @@ env:
 on:
   push:
     branches:
-      - master
+      - '42-stable'
   pull_request:
     branches:
-      - 'master'
+      - '42-stable'
 
 jobs:
   changes:
