@@ -162,8 +162,8 @@ export PACKAGES="\
 "
 
 export PACKAGE_OVERRIDES="\
-	https://github.com/gru2007/linux-chimeraos-apple/releases/download/v6.6-test/linux-chimeraos-apple-6.6.0.rc7.chos2-1-x86_64.pkg.tar.zst \
-	https://github.com/gru2007/linux-chimeraos-apple/releases/download/v6.6-test/linux-chimeraos-apple-headers-6.6.0.rc7.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/gru2007/linux-chimeraos-apple/releases/download/v6.6-test4/linux-chimeraos-apple-6.6.0.rc7.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/gru2007/linux-chimeraos-apple/releases/download/v6.6-test4/linux-chimeraos-apple-headers-6.6.0.rc7.chos2-1-x86_64.pkg.tar.zst \
 	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/23.3.5-chos1-1/lib32-libva-mesa-driver-1--23.3.5.chos1-1-x86_64.pkg.tar.zst \
 	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/23.3.5-chos1-1/lib32-mesa-1--23.3.5.chos1-1-x86_64.pkg.tar.zst \
 	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/23.3.5-chos1-1/lib32-mesa-vdpau-1--23.3.5.chos1-1-x86_64.pkg.tar.zst \
