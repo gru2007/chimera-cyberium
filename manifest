@@ -177,7 +177,6 @@ export PACKAGE_OVERRIDES="\
 	https://archive.archlinux.org/repos/2023/12/17/extra/os/x86_64/pipewire-jack-1%3A1.0.0-2-x86_64.pkg.tar.zst \
 	https://archive.archlinux.org/repos/2023/06/28/extra/os/x86_64/libretro-pcsx2-11900-2-x86_64.pkg.tar.zst \
 	https://archive.archlinux.org/packages/l/libretro-mame/libretro-mame-85763-1-x86_64.pkg.tar.zst \
-	https://github.com/NoaHimesaka1873/apple-bcm-firmware/releases/download/v14.0/apple-bcm-firmware-14.0-1-any.pkg.tar.zst \
 "
 
 # Each entry is the clone url (https://aur.archlinux.org/{AUR_PACKAGE}.git)
@@ -228,6 +227,7 @@ export AUR_PACKAGES="\
 	zenergy-dkms-git \
 	t2fanrd \
 	apple-t2-audio-config \
+	apple-bcm-firmware \
 "
 
 export SERVICES="\
