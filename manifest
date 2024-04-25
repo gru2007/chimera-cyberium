@@ -244,6 +244,7 @@ export SERVICES="\
 	sshd \
 	systemd-timesyncd \
 	swapfile \
+	t2fanrd \
 "
 
 export USER_SERVICES="\
