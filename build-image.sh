@@ -82,7 +82,7 @@ source /manifest
 
 pacman-key --populate
 
-echo "LANG=en_US.UTF-8" > /etc/locale.conf
+echo "LANG=ru_RU.UTF-8" > /etc/locale.conf
 locale-gen
 
 # Disable parallel downloads
