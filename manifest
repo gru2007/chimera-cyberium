@@ -1,7 +1,7 @@
 #! /bin/bash
 
 export VERSION="46"
-export SYSTEM_DESC="CyberuimOS"
+export SYSTEM_DESC="CyberiumOS"
 export SYSTEM_NAME="cyberium"
 export USERNAME="gamer"
 export SIZE="12000MB"
