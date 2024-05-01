@@ -132,7 +132,11 @@ echo "${USERNAME}:${USERNAME}" | chpasswd
 echo "export EDITOR=/usr/bin/vim" >> /etc/bash.bashrc
 
 echo "[Seat:*]
-autologin-user=${USERNAME}
+#autologin-user=${USERNAME}
+
+# testing guest feature
+autologin-guest=true
+allow-guest=true
 " > /etc/lightdm/lightdm.conf.d/00-autologin-user.conf
 
 echo "${SYSTEM_NAME}" > /etc/hostname
