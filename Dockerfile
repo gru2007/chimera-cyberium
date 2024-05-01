@@ -53,6 +53,7 @@ RUN source /manifest && \
     pacman --noconfirm -Syyuu; if [ -n "${PACKAGE_OVERRIDES}" ]; then wget --directory-prefix=/tmp/extra_pkgs ${PACKAGE_OVERRIDES}; pacman --noconfirm -U --overwrite '*' /tmp/extra_pkgs/*; rm -rf /tmp/extra_pkgs; fi
 
 RUN python -m pipx install meson
+RUN python -m pipx ensurepath
 
 USER build
 ENV BUILD_USER "build"
