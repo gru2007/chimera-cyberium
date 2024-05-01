@@ -22,9 +22,6 @@
 [submodule "aur-pkgs/frzr"]
 	path = aur-pkgs/frzr
 	url = https://aur.archlinux.org/frzr.git
-[submodule "aur-pkgs/gamescope-plus"]
-	path = aur-pkgs/gamescope-plus
-	url = https://aur.archlinux.org/gamescope-plus.git
 [submodule "aur-pkgs/gamescope-session-steam-git"]
 	path = aur-pkgs/gamescope-session-steam-git
 	url = https://aur.archlinux.org/gamescope-session-steam-git.git
