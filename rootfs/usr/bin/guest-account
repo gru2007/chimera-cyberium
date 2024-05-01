@@ -115,7 +115,11 @@ add_account ()
     source_local_prefs
   fi
 
-   ln -s /home/guest/.steam ${GUEST_HOME}/.steam
+   mkdir ${GUEST_HOME}/.steam
+   chmod 777 ${GUEST_HOME}/.steam
+   chmod 777 -R /home/cyber/.steam/steam
+   chmod 777 -R /home/cyber/.local
+   ln -s /home/cyber/.steam/steam ${GUEST_HOME}/.steam/steam
 
   echo ${GUEST_USER}
 }
