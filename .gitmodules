@@ -127,6 +127,3 @@
 [submodule "aur-pkgs/bmi160-aya-neo-dkms-git"]
 	path = aur-pkgs/bmi160-aya-neo-dkms-git
 	url = https://aur.archlinux.org/bmi160-aya-neo-dkms-git
-[submodule "aur-pkgs/meson"]
-	path = aur-pkgs/meson
-	url = https://aur.archlinux.org/meson
