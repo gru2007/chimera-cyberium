@@ -21,7 +21,7 @@ RUN echo -e "keyserver-options auto-key-retrieve" >> /etc/pacman.d/gnupg/gpg.con
     python-nose \
     python-setuptools \
     python-wheel \
-    python-pip \
+    python-pipx \
     sudo \
     && \
     pacman --noconfirm -S --needed git && \
@@ -52,7 +52,7 @@ RUN source /manifest && \
     echo "Server=https://archive.archlinux.org/repos/${ARCHIVE_DATE}/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist && \
     pacman --noconfirm -Syyuu; if [ -n "${PACKAGE_OVERRIDES}" ]; then wget --directory-prefix=/tmp/extra_pkgs ${PACKAGE_OVERRIDES}; pacman --noconfirm -U --overwrite '*' /tmp/extra_pkgs/*; rm -rf /tmp/extra_pkgs; fi
 
-RUN python -m pip install meson
+RUN python -m pipx install meson
 
 USER build
 ENV BUILD_USER "build"
