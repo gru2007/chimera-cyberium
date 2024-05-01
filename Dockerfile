@@ -13,12 +13,15 @@ RUN echo -e "keyserver-options auto-key-retrieve" >> /etc/pacman.d/gnupg/gpg.con
     xcb-util-wm \
     wget \
     pyalpm \
+    python \
     python-build \
     python-installer \
     python-hatchling \
     python-markdown-it-py \
+    python-nose \
     python-setuptools \
     python-wheel \
+    python-pipx \
     sudo \
     && \
     pacman --noconfirm -S --needed git && \
@@ -26,7 +29,10 @@ RUN echo -e "keyserver-options auto-key-retrieve" >> /etc/pacman.d/gnupg/gpg.con
     useradd build -G wheel -m && \
     su - build -c "git clone https://aur.archlinux.org/pikaur.git /tmp/pikaur" && \
     su - build -c "cd /tmp/pikaur && makepkg -f" && \
-    pacman --noconfirm -U /tmp/pikaur/pikaur-*.pkg.tar.zst
+    su - build -c "git clone -b patch-1 https://github.com/ruineka/py-leveldb.git /tmp/py-leveldb" && \
+    su - build -c "cd /tmp/py-leveldb && makepkg -f" && \
+    pacman --noconfirm -U /tmp/pikaur/pikaur-*.pkg.tar.zst && \
+    pacman --noconfirm -U /tmp/py-leveldb/python-leveldb*.pkg.tar.zst
 
 # Auto add PGP keys for users
 RUN mkdir -p /etc/gnupg/ && echo -e "keyserver-options auto-key-retrieve" >> /etc/gnupg/gpg.conf
@@ -45,6 +51,8 @@ COPY manifest /manifest
 RUN source /manifest && \
     echo "Server=https://archive.archlinux.org/repos/${ARCHIVE_DATE}/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist && \
     pacman --noconfirm -Syyuu; if [ -n "${PACKAGE_OVERRIDES}" ]; then wget --directory-prefix=/tmp/extra_pkgs ${PACKAGE_OVERRIDES}; pacman --noconfirm -U --overwrite '*' /tmp/extra_pkgs/*; rm -rf /tmp/extra_pkgs; fi
+
+RUN python -m pipx install meson
 
 USER build
 ENV BUILD_USER "build"
