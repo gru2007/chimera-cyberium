@@ -21,6 +21,7 @@ RUN echo -e "keyserver-options auto-key-retrieve" >> /etc/pacman.d/gnupg/gpg.con
     python-nose \
     python-setuptools \
     python-wheel \
+    python-pip \
     sudo \
     && \
     pacman --noconfirm -S --needed git && \
