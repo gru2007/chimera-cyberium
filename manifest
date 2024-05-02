@@ -240,6 +240,9 @@ export AUR_PACKAGES="\
 	steam-removable-media-git \
 	wyvern \
 	zenergy-dkms-git \
+	t2fanrd \
+	apple-t2-audio-config \
+	apple-bcm-firmware \
 "
 
 export SERVICES="\
