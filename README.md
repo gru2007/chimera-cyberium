@@ -1,3 +1,3 @@
-DO NOT DOWNLOAD DIRECTLY FROM THE RELEASES PAGE. THIS IS NOT INSTALLATION MEDIA. FOLLOW THE LINK BELOW FOR DOWNLOAD AND INSTALLATION INSTRUCTIONS.
+НЕ СКАЧИВАЙТЕ `.img` С СТРАНИЦЫ РЕЛИЗОВ ЭТОГО РЕПОЗИТОРИЯ. ЭТО НЕ УСТАНОВОЧНЫЕ ОБРАЗЫ. ПРОСЛЕДУЙТЕ ПО ССЫЛКЕ НИЖЕ ДЛЯ ЗАГРУЗКИ УСТАНОВЩИКА.
 
-[ChimeraOS website](https://chimeraos.org)
+[Установочные ISO](https://github.com/gru2007/install-media/releases)
