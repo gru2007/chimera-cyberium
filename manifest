@@ -165,6 +165,9 @@ export PACKAGES="\
 	nvidia-dkms \
 	nvidia-prime \
 	nvidia-utils \
+	t2fanrd \
+	apple-t2-audio-config \
+	apple-bcm-firmware \
 "
 
 export PACKAGE_OVERRIDES="\
@@ -240,9 +243,6 @@ export AUR_PACKAGES="\
 	steam-removable-media-git \
 	wyvern \
 	zenergy-dkms-git \
-	t2fanrd \
-	apple-t2-audio-config \
-	apple-bcm-firmware \
 "
 
 export SERVICES="\
