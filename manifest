@@ -54,6 +54,7 @@ export PACKAGES="\
 	gnome-software \
 	gnome-system-monitor \
 	gnome-text-editor \
+	gnome-tweaks \
 	gst-plugin-pipewire \
 	gvfs-smb \
 	gvfs-nfs \
@@ -128,7 +129,6 @@ export PACKAGES="\
 	podman \
 	pulsemixer \
 	python \
-	python-inotify-simple \
 	python-notify2 \
 	qtractor \
 	retroarch \
@@ -161,37 +161,37 @@ export PACKAGES="\
 	xorg-server \
 	xz \
 	zip \
-    lib32-nvidia-utils \
+   lib32-nvidia-utils \
 	nvidia-dkms \
 	nvidia-prime \
 	nvidia-utils \
 	t2fanrd \
 	apple-t2-audio-config \
 	apple-bcm-firmware \
-    fastfetch \
+   fastfetch \
 "
 
 export PACKAGE_OVERRIDES="\
 	https://github.com/gru2007/linux-chimeraos-apple/releases/download/v6.8-test/linux-chimeraos-apple-6.8.5.chos3-1-x86_64.pkg.tar.zst \
 	https://github.com/gru2007/linux-chimeraos-apple/releases/download/v6.8-test/linux-chimeraos-apple-headers-6.8.5.chos3-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/lib32-libva-mesa-driver-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/lib32-mesa-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/lib32-mesa-vdpau-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/lib32-opencl-rusticl-mesa-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/lib32-vulkan-intel-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/lib32-vulkan-mesa-layers-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/lib32-vulkan-radeon-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/lib32-vulkan-nouveau-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/lib32-vulkan-swrast-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/libva-mesa-driver-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/mesa-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/mesa-vdpau-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/opencl-rusticl-mesa-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/vulkan-intel-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/vulkan-mesa-layers-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/vulkan-radeon-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/vulkan-nouveau-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.0.5-chos1-1/vulkan-swrast-1--24.0.5.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/lib32-libva-mesa-driver-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst\
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/lib32-mesa-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/lib32-mesa-vdpau-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/lib32-opencl-rusticl-mesa-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/lib32-vulkan-intel-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/lib32-vulkan-mesa-layers-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/lib32-vulkan-radeon-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/lib32-vulkan-nouveau-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/lib32-vulkan-swrast-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/libva-mesa-driver-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/mesa-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/mesa-vdpau-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/opencl-rusticl-mesa-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/vulkan-intel-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/vulkan-mesa-layers-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/vulkan-radeon-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/vulkan-nouveau-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.0.rc4-chos2-1/vulkan-swrast-1–24.1.0.rc4.chos2-1-x86_64.pkg.tar.zst \
 	https://archive.archlinux.org/repos/2023/06/28/extra/os/x86_64/libretro-pcsx2-11900-2-x86_64.pkg.tar.zst \
 	https://archive.archlinux.org/packages/l/libretro-mame/libretro-mame-85763-1-x86_64.pkg.tar.zst \
 "
@@ -210,19 +210,18 @@ export AUR_PACKAGES="\
 	downgrade \
 	evdev-keepalive \
 	frzr \
-	gamescope-plus \
 	gamescope-session-steam-git \
 	gamescope-session-steam-plus-git \
 	hhfc-git \
 	inputplumber-bin \
 	legendary \
 	lib32-gamescope-plus \
-	lib32-gperftools \
 	libretro-dosbox-pure-git \
 	libretro-opera-git \
 	libretro-prosystem-git \
 	libretro-stella2014-git \
 	libretro-virtualjaguar-git \
+	linux-firmware-valve \
 	kanit-font \
 	nintendo-udev \
 	opengamepadui-bin \
@@ -232,7 +231,6 @@ export AUR_PACKAGES="\
 	python-gbopyrator \
 	python-vdf \
 	r8152-dkms \
-	retroarch-autoconfig-udev-git \
 	rtl8812au-dkms-git \
 	rtl8814au-dkms-git \
 	rtl88x2bu-dkms-git \
@@ -257,7 +255,7 @@ export SERVICES="\
 	inputplumber \
 	lightdm \
 	powerstation \
-        steam-powerbuttond \
+	steam-powerbuttond \
 	sshd \
 	systemd-timesyncd \
 	swapfile \
@@ -267,6 +265,7 @@ export USER_SERVICES="\
 	chimera.service \
 	pipewire \
 	steam-patch.service \
+	chimera-cart-monitor.service \
 "
 
 export FILES_TO_DELETE="\
@@ -275,9 +274,6 @@ export FILES_TO_DELETE="\
 	/usr/share/doc \
 	/usr/share/gtk-doc \
 	/usr/share/help \
-	/usr/share/libretro/autoconfig/udev/Gasia_PS_Gamepad_USB.cfg \
-	/usr/share/libretro/autoconfig/udev/Sony-PlayStation3-DualShock3-Controller-Bluetooth.cfg \
-	/usr/share/libretro/autoconfig/udev/Xbox_360_Wireless_Receiver_Chinese01.cfg \
 	/usr/share/man \
 "
 
@@ -290,9 +286,6 @@ postinstallhook() {
 	${USERNAME} ALL=(ALL) NOPASSWD: /usr/bin/chimera-session-use-lightdm
 	${USERNAME} ALL=(ALL) NOPASSWD: /usr/share/chimera/bin/power-tool
 	" >/etc/sudoers.d/chimera
-
-	# disable retroarch menu in joypad configs
-	find /usr/share/libretro/autoconfig -type f -name '*.cfg' | xargs -d '\n' sed -i '/input_menu_toggle_btn/d'
 
 	# download and add racing wheel udev rules
 	pushd /usr/lib/udev/rules.d
