@@ -10,7 +10,7 @@ export WEBSITE="https://chimeraos.org"
 export DOCUMENTATION_URL="https://chimeraos.org/about"
 export BUG_REPORT_URL="https://github.com/ChimeraOS/chimeraos/issues"
 
-export KERNEL_PACKAGE="linux-chimeraos-apple"
+export KERNEL_PACKAGE="linux-chimeraos-applet2-RuslanArtemev"
 export KERNEL_PACKAGE_ORIGIN="local"
 
 export PACKAGES="\
@@ -121,6 +121,12 @@ export PACKAGES="\
 	nfs-utils \
 	noto-fonts-emoji \
 	nss-mdns \
+	nvidia-dkms \
+	opencl-nvidia \
+	lib32-opencl-nvidia \
+	nvidia-utils \
+	lib32-nvidia-utils \
+	nvidia-prime \
 	openal \
 	openrazer-daemon \
 	openssh \
@@ -175,26 +181,26 @@ export PACKAGES="\
 "
 
 export PACKAGE_OVERRIDES="\
-	https://github.com/gru2007/linux-chimeraos-apple/releases/download/v6.9-2/linux-chimeraos-apple-6.9.3.chos2-1-x86_64.pkg.tar.zst \
-	https://github.com/gru2007/linux-chimeraos-apple/releases/download/v6.9-2/linux-chimeraos-apple-headers-6.9.3.chos2-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/lib32-libva-mesa-driver-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/lib32-mesa-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/lib32-mesa-vdpau-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/lib32-opencl-rusticl-mesa-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/lib32-vulkan-intel-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/lib32-vulkan-mesa-layers-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/lib32-vulkan-radeon-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/lib32-vulkan-nouveau-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/lib32-vulkan-swrast-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/libva-mesa-driver-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/mesa-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/mesa-vdpau-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/opencl-rusticl-mesa-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/vulkan-intel-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/vulkan-mesa-layers-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/vulkan-radeon-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/vulkan-nouveau-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
-	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.1.3-chos1-1/vulkan-swrast-1--24.1.3.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/gru2007/linux-chimeraos-apple/releases/download/v6.11-1/linux-chimeraos-applet2-RuslanArtemev-6.11.5.chos1-2-x86_64.pkg.tar.zst \
+	https://github.com/gru2007/linux-chimeraos-apple/releases/download/v6.11-1/linux-chimeraos-applet2-RuslanArtemev-headers-6.11.5.chos1-2-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/lib32-libva-mesa-driver-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/lib32-mesa-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/lib32-mesa-vdpau-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/lib32-opencl-rusticl-mesa-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/lib32-vulkan-intel-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/lib32-vulkan-mesa-layers-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/lib32-vulkan-radeon-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/lib32-vulkan-nouveau-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/lib32-vulkan-swrast-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/libva-mesa-driver-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/mesa-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/mesa-vdpau-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/opencl-rusticl-mesa-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/vulkan-intel-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/vulkan-mesa-layers-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/vulkan-radeon-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/vulkan-nouveau-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
+	https://github.com/ChimeraOS/mesa-chimeraos/releases/download/24.2.4-chos1-1/vulkan-swrast-1--24.2.4.chos1-1-x86_64.pkg.tar.zst \
 	https://archive.archlinux.org/repos/2023/06/28/extra/os/x86_64/libretro-pcsx2-11900-2-x86_64.pkg.tar.zst \
 	https://archive.archlinux.org/packages/l/libretro-mame/libretro-mame-85763-1-x86_64.pkg.tar.zst \
 "
@@ -204,21 +210,21 @@ export PACKAGE_OVERRIDES="\
 # Check on the AUR webpage if you are unsure asusctl \
 export AUR_PACKAGES="\
 	asusctl \
-	aw87559-firmware \
 	ayaneo-platform-dkms-git \
 	ayn-platform-dkms-git \
 	bcm20702a1-firmware \
 	boxtron \
 	chimera \
-	chimeraos-device-quirks-git \
+	chimeraos-device-quirks \
 	downgrade \
 	evdev-keepalive \
 	frzr \
 	gamescope-plus \
 	gamescope-session-steam-git \
 	gamescope-session-steam-plus-git \
+	gpd-fan-driver-dkms-git \
 	hhfc-git \
-	inputplumber-bin \
+	hid-msi-claw-dkms-git \
 	legendary \
 	libretro-dosbox-pure-git \
 	libretro-opera-git \
@@ -236,13 +242,13 @@ export AUR_PACKAGES="\
 	python-vdf \
 	rtl8812au-dkms-git \
 	rtl8814au-dkms-git \
-	rtl88x2bu-dkms-git \
 	rtl8821au-dkms-git \
 	ryzenadj-git \
 	steam_notif_daemon \
 	steam-powerbuttond-git \
 	steam-removable-media-git \
 	wyvern \
+	xpadneo-dkms-git \
 	zenergy-dkms-git \
 	web-greeter \
 "
@@ -256,8 +262,8 @@ export SERVICES="\
 	haveged \
 	home-swapfile.swap \
 	inputplumber \
-	inputplumber-resume \
 	lightdm \
+	nvidia-powerd \
 	powerstation \
 	steam-powerbuttond \
 	sshd \
@@ -304,11 +310,7 @@ postinstallhook() {
 	rm /usr/share/libalpm/hooks/71-dkms-remove.hook
 	pacman --noconfirm -Rnsdd make gcc dkms ${KERNEL_PACKAGE}-headers
 
-	# remove dolphin standalone emulator files (only need /usr/share/dolphin-emu/sys)
-	rm /usr/bin/dolphin-emu
-	rm /usr/bin/dolphin-emu-nogui
-	# dolphin-tool is no longer created in new builds?
-	#rm /usr/bin/dolphin-tool
+	# remove dolphin shortcut to not clutter up the desktop
 	rm /usr/share/applications/dolphin-emu.desktop
 
 	# clean up desktop shortcuts
@@ -329,6 +331,7 @@ postinstallhook() {
 	# force -steamdeck option in desktop mode to prevent constant steam updates
 	sed -i 's,Exec=/usr/bin/steam-runtime,Exec=/usr/bin/steam-runtime -steamdeck,' /usr/share/applications/steam.desktop
 
-	# set permissions for intel_gpu_top and mangohud
+	# set permissions for intel_gpu_top and gamescope
 	setcap cap_perfmon=+ep /usr/bin/intel_gpu_top
+	setcap 'CAP_SYS_NICE=eip' /usr/bin/gamescope
 }
