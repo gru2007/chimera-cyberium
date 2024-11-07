@@ -170,14 +170,10 @@ export PACKAGES="\
 	xorg-server \
 	xz \
 	zip \
-   lib32-nvidia-utils \
-	nvidia-dkms \
-	nvidia-prime \
-	nvidia-utils \
 	t2fanrd \
 	apple-t2-audio-config \
 	apple-bcm-firmware \
-   fastfetch \
+	fastfetch \
 "
 
 export PACKAGE_OVERRIDES="\
@@ -207,7 +203,7 @@ export PACKAGE_OVERRIDES="\
 
 # Each entry is the clone url (https://aur.archlinux.org/{AUR_PACKAGE}.git)
 # Which is often the same as the package name but it can be different.
-# Check on the AUR webpage if you are unsure asusctl \
+# Check on the AUR webpage if you are unsure
 export AUR_PACKAGES="\
 	asusctl \
 	ayaneo-platform-dkms-git \
